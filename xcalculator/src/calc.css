@@ -1,0 +1,27 @@
+.inputPad{
+    display: flex;
+    
+    flex-wrap: wrap;
+    width: 180px;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+   gap: 4px;
+    
+}
+.inputButton{
+    display: inline;
+    height: 40px;
+    width: 40px;
+  
+    border-radius: 5px;
+}
+#resultTab{
+    border: grey solid 1px;
+    width: 100px;
+    margin: 10px 40px ;
+    display: none;
+}
+.container{
+    width: 250px;
+}

@@ -42,9 +42,9 @@ function XCalculator(){
         <button className='inputButton' value={2} onClick={handleClick}>2</button>
         <button className='inputButton' value={3} onClick={handleClick}>3</button>
         <button className='inputButton' value={"*"} onClick={handleClick} >*</button>
-        <button className='inputButton' onClick={clearInput} >C</button>
+        <button className='inputButton' value={"C"} onClick={clearInput} >C</button>
         <button className='inputButton' value={0} onClick={handleClick}>0</button>
-        <button className='inputButton' onClick={calculateResult} >=</button>
+        <button className='inputButton' value={"="} onClick={calculateResult} >=</button>
         <button className='inputButton' value={"/"} onClick={handleClick} >/</button></div>
         </div>
     )

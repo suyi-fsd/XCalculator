@@ -10,10 +10,17 @@ function XCalculator(){
         inputDisplay.value=input;
     }
     function calculateResult(e){
+        if(input){
         let res = eval(input);
        setResult(res);
         let results = document.getElementById("resultTab");
         results.style.display="block";
+        }
+        else{
+            let results = document.getElementById("resultTab");
+            setResult("Error");
+        results.style.display="block";
+        }
     }
     function clearInput(e){
         setInput("");
@@ -27,7 +34,7 @@ function XCalculator(){
         <h1>React Calculator</h1>
         <input id='inputDisplay' value={input} type="text"   />
         <div id='resultTab'>
-            {(input==='')?'Error':result}
+            {result}
         </div>
         <div className='inputPad'>
         <button className='inputButton' value={7} onClick={handleClick}>7</button>
